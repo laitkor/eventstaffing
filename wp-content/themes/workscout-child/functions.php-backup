@@ -1,0 +1,369 @@
+<?php 
+add_action( 'wp_enqueue_scripts', 'workscout_enqueue_styles' );
+function workscout_enqueue_styles() {
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css',array('workscout-base','workscout-responsive','workscout-font-awesome') );
+}
+
+function remove_parent_theme_features() {
+
+}
+add_action( 'after_setup_theme', 'remove_parent_theme_features', 10 );
+
+//-----------------------------------------Event Gallery ----------------------------------------------
+
+function eventGallery() { 
+
+	$args = array(
+		'numberposts' => 6,
+		'offset' => 0,
+		'category' => 0,
+		'orderby' => 'id',
+		'order' => 'ASC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '',
+		'meta_value' =>'',
+		'post_type' => 'event',
+		'post_status' => 'publish',
+		'suppress_filters' => true
+		);
+
+	$recent_event_posts = wp_get_recent_posts( $args, ARRAY_A );
+	?>
+
+	<div class="vc_row wpb_row vc_row-fluid" id="event_section">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+			<div class="vc_column-inner">
+				<div class="wpb_wrapper">
+					<!-- <h3 class="margin-top-0 margin-bottom-25">Event Gallery</h3> -->
+					<div class="recent-blog-posts">
+						<?php 
+						$x=1;
+						foreach($recent_event_posts as $post) {
+							//$post_title = $post['post_title'].'<br/>';
+							$post_content = substr($post['post_content'],0,100).'...';
+							$slug = $post['post_name'];
+							$post_date = $post['post_date'];
+							$post_date = date("F m, Y", strtotime($post_date));
+							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post['ID']), 'post'); 
+							$image = $thumb[0];
+							?>	
+							<div class="vc_col-sm-4 wpb_column alpha">
+								<article class="recent-post">                        
+									<figure class="recent-post-img">   
+										<!-- <a href="javascript:void(0)"> -->             
+										<img width="498" height="315" style="height:237px;" src="<?php echo $image; ?>" class="attachment-workscout-small-blog size-workscout-small-blog wp-post-image" alt="">
+										<!-- </a> -->
+										<div class="hover-icon">
+											<h3> EVENTS & PROMOTIONS
+												<a href="<?php echo $slug; ?>">
+													<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+												</a>
+											</h3>
+											<div class="event-date"><?php echo $post_date; ?></div>
+											<p><?php echo $post_content; ?></p>
+										</div>
+									</figure>
+
+                    <!--<section class="from-the-blog-content">                        
+                            <div style="float:left">October 2017</div>
+                            <div style="float:right">NATIONWIDE</div>
+                            <div style="clear:both"></div>                        
+                        </section>-->
+
+                    </article>
+                </div>
+
+                <?php } ?>
+
+            </div>
+
+            <div class="view_all_events">
+            	<a class="button" href="events"> VIEW ALL EVENTS </a>
+            </div>
+
+        </div>
+    </div>
+</div>     
+</div>
+
+
+<?php }
+add_shortcode( 'vcEventGalleryHomePage', 'eventGallery' );
+//----------------------------------- Event Gallery For Home Page ---------------------------------------
+?>
+
+<?php 
+//------------------------------------- Blog Post For Home Page -----------------------------------------
+function blogPostHomePage() { 
+	$args = array(
+		'numberposts' => 2,
+		'offset' => 0,
+		'category' => 0,
+		'orderby' => 'post_date',
+		'order' => 'DESC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '',
+		'meta_value' =>'',
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'suppress_filters' => true
+		);
+
+	$recent_posts = wp_get_recent_posts( $args, ARRAY_A );
+
+	?>
+	<div class="vc_row wpb_row vc_inner vc_row-fluid">
+		<?php foreach($recent_posts as $post) {
+			$post_title = $post['post_title'].'<br/>';
+			$post_content = substr($post['post_content'],0,100).'...';
+			$slug = $post['post_name'];
+			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post['ID']), 'post');
+			$image = $thumb[0];
+			?>
+			<div class="wpb_column vc_column_container vc_col-sm-6">		
+				<div class="vc_column-inner">
+					<div class="wpb_wrapper">
+						<div class="wpb_text_column wpb_content_element">
+							<div class="wpb_wrapper">
+								<figure class="recent-post-img">
+									<a href="<?php echo $slug; ?>">
+										<img class="attachment-workscout-small-blog size-workscout-small-blog wp-post-image" src="<?php echo $image; ?>" alt="" width="498" style="max-height:296px">
+									</a>
+									<p class="pfix"></p>
+									<div class="hover-icon">
+									</div>
+								</figure>
+								<h4 style="text-align: center;"><?php echo ucfirst(strtolower($post_title)); ?></h4>
+								<p style="text-align: center;"><?php echo $post_content; ?> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
+		<?php }
+		add_shortcode( 'vcBlogPostHomePage', 'blogPostHomePage' );
+//----------------------------------- Blog Post For Home Page ------------------------------------------
+		?>
+
+
+
+
+		<?php 
+//------------------------------------ Talent Profile For Home Page ------------------------------------
+		function talentProfileHomePage() { ?>
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+
+<div class="talent-first-row item active">
+
+<hr class="talent-hr" />
+
+<div class="talent-img">
+	<img src="wp-content/uploads/talent/14068041_1083504251738918_4994198631716289468_n.jpg" alt="" title=""/>
+</div>
+<div class="talent-img">
+	<img src="wp-content/uploads/talent/IMG_7879.JPG" alt="" title=""/>
+</div>
+<div class="talent-img">
+	<img src="wp-content/uploads/talent/14188179_1186982431325256_6419402973594835580_o.jpg" alt="" title=""/>
+</div>
+<div class="talent-img">
+	<img src="wp-content/uploads/talent/Photo_Apr_25__8_25_09_PM.jpg" alt="" title=""/>
+</div>
+<div class="talent-img">
+	<img src="wp-content/uploads/talent/RenderedContent-1535AEC7-E74F-402A-A16D-2F59D4243C2F.JPG" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/orlando_model_promotional_model_www.ceastaffing.com_wqrqr33.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/nyc_model_promo_model_www.ceastaffing.com_ww.jpg" alt="" title=""/>
+</div>
+
+
+
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/nyc_model_promo_model_www.ceastaffing.com.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/timthumb.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/Half_1.JPG" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/10712467_10152674313697025_2144024690958541008_o.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/10492200_10152242226396503_299551178791076525_n.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/1960083_492581137520303_1274256317_n.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/los_angeles_trade_show_model_las_angeles_brand_ambassador_www.ceastaffing.com_23453.jpg" alt="" title=""/>
+</div>
+
+
+</div>
+
+
+<div class="talent-first-row item">
+
+
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/dulce.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/544F536A-4B81-46D8-94C1-6517569D6156.JPG" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/Smaller_Commercial_Headshottt.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/Screen_Shot_2015-06-17_at_1.00.55_PM.png" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/2013-09-03_12_00_05_jpg.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/96_565563564694_77307684_31560215_4326404_o.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/phoenix_model_www.ceastaffing.com__awetaew.jpg" alt="" title=""/>
+</div>
+
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/518020140820TheFields_13_.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/17131098411_591476040902612_1060883038_n.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/arizona.JPG" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/mirror.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/face.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/ox3res.jpg" alt="" title=""/>
+</div>
+
+<div class="talent-img">
+<img src="wp-content/uploads/talent/8913webFLDress.jpg" alt="" title=""/>
+</div>
+
+
+</div> -->
+
+<!-- Left and right controls -->
+    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+  </a> -->
+
+  <!-- </div>
+</div>
+<br/>
+<div class="talent-view-more">
+<a class="button" href="talent"> VIEW ALL TALENT PROFILES </a>
+</div>
+<br/>
+<style type="text/css">
+	.talent-view-more {padding-right:8px;}           
+	.talent-view-more a:hover {color:#FFF;text-decoration: none;}
+</style> -->
+<?php }
+add_shortcode( 'vcTalentProfileHomePage', 'talentProfileHomePage' );
+//------------------------------------- Talent Profile For Home Page ------------------------------------
+?>
+
+<?php 
+function eventGridView() {
+	?>
+	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/workscout-child/jQuery-flexImages-master/jquery.flex-images.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="<?php echo get_site_url(); ?>/wp-content/themes/workscout-child/jQuery-flexImages-master/jquery.flex-images.js"></script>
+	<?php
+	$args = array(
+		'numberposts' => -1,
+		'offset' => 0,
+		'category' => 0,
+		'orderby' => 'id',
+		'order' => 'ASC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '',
+		'meta_value' =>'',
+		'post_type' => 'event',
+		'post_status' => 'publish',
+		'suppress_filters' => true
+		);
+
+	$recent_event_posts = wp_get_recent_posts( $args, ARRAY_A );
+
+	?>
+
+	<div id="demo" class="flex-images">
+		<?php 
+		$x=1;
+		foreach($recent_event_posts as $post) {
+		//$post_title = $post['post_title'].'<br/>';
+			$post_content = substr($post['post_content'],0,100).'...';
+			$slug = $post['post_name'];
+			$post_date = $post['post_date'];
+			$post_date = date("F m, Y", strtotime($post_date));
+			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post['ID']), 'post'); 
+			$image = $thumb[0];
+			?>	
+
+			<a href="<?php echo $slug; ?>">
+				<div class="item">
+					<img src="<?php echo $image; ?>" alt="" title=""/>  		
+				</div>  
+			</a>
+
+			<?php } ?>
+		</div> 
+
+		<script type="text/javascript">
+			jQuery('#demo').flexImages({
+				rowHeight: 225
+			});
+		</script>
+		<?php }
+		add_shortcode( 'vcEventGridView', 'eventGridView' );
+//------------------------------------- Talent Profile For Home Page ------------------------------------
