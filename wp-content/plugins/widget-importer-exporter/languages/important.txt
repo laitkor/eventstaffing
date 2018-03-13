@@ -1,10 +1,3 @@
-Do not add your own translations to this directory. They will be lost during plugin
-updates. The only .mo files that should be loaded from here are pre-made translations
-that come with the plugin.
-
-Store your translations at:
-wp-content/languages/plugins/widget-importer-exporter-$locale.mo
-(e.g. widget-importer-exporter-en_US.mo) to keep them safe from loss during updates.
-
-Please feel free to contribute your translation to this project with these instructions:
-https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c9809aad85e4c8681ad7f51ea5912fc5f5fe5bdd47d65e8652835710b54473d
+size 552

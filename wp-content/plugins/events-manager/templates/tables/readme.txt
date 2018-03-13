@@ -1,10 +1,3 @@
-This folder has files containing table output layouts, such as event and location admin tables for the public pages.
-
-Any of these files in this folder can be individually overriden in your theme folder, making it upgrade safe without having to hack core plugin files directly.
-
-To override a file, copy (not move) the file to wp-content/themes/yourtheme/plugins/events-manager/tables/ and edit as needed. 
-
-If the file is within a subfolder of this directory, create that subdirectory in your theme path above and copy the file there.
-
-Whilst we intend to keep changes to a minimum, it may be inevitable that we need to update these files to add new features or fix a 
-reported bug, please keep this in mind when updating.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9b1be787b4efb4850af2172c3d982bbd8dd6ded83bf47463657974281269b7d
+size 732
