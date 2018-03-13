@@ -14,7 +14,7 @@ $response = wp_remote_post( $url, array(
 	'httpversion' => '1.0',
 	'blocking' => true,
 	'headers' => array('Content-Type' => 'application/x-www-form-urlencoded'),
-	'body' => array( 'username' => 'Y2VhYXBpQHBvcGJvb2tpbmdzLmNvbQ==', 'password' => 'UEBzczRBcGlQcm9kdWN0aW9u', 'grant_type' => 'password')
+	'body' => array( 'username' => '***********', 'password' => '*****************', 'grant_type' => 'password')
     )
 ); 
 
