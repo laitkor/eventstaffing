@@ -24,7 +24,7 @@ get_header(); ?>
   <div class="row">
       <div class="vc_col-sm-3">
         <div class="left">
-         <img src="http://ceastaffing.stpi.com/wp-content/uploads/talent/timthumb.php.jpg" alt="" title="">
+         <img src="http://eventstaffing.stpi.com/wp-content/uploads/talent/timthumb.php.jpg" alt="" title="">
         </div>
       </div>
       <div class="vc_col-sm-9">

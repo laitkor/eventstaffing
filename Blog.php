@@ -47,7 +47,7 @@ echo "<pre>"; print_r($origData);
 //     $PostId = wp_insert_post($PostData);
 //     if(!empty($value->featuredpic))
 //     {
-//       $imgurl = "http://ceastaffing.com/".$value->featuredpic;
+//       $imgurl = "http://eventstaffing.com/".$value->featuredpic;
 //       $attach_id = Generate_Featured_Image($imgurl, $PostId);
 //       update_post_meta($PostId, "_thumbnail_id", $attach_id); 
 //     }

@@ -33,8 +33,8 @@
           var url = window.location.href;
           
           if(url.indexOf("events") != -1) {
-            jQuery('[href*="http://ceastaffing.stpi.com/2017/10/"]').css('color','#8A3935');
-            jQuery('[href*="http://ceastaffing.stpi.com/2017/10/"]').css('font-weight','bold');
+            jQuery('[href*="http://eventstaffing.stpi.com/2017/10/"]').css('color','#8A3935');
+            jQuery('[href*="http://eventstaffing.stpi.com/2017/10/"]').css('font-weight','bold');
           }
           jQuery('[href*="'+url+'"]').css('color','#8A3935');
           jQuery('[href*="'+url+'"]').css('font-weight','bold');

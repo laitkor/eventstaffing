@@ -23,9 +23,9 @@
                         <input name="rememberme" type="checkbox" id="rememberme" value="forever" autocomplete="off"> Remember me                    </label>
                 </p>
                 <p class="lost_password">
-                    <a href="http://ceastaffing.stpi.com/my-account/lost-password/">Lost your password?</a>
+                    <a href="http://eventstaffing.stpi.com/my-account/lost-password/">Lost your password?</a>
                 </p>
-                <input type="hidden" name="redirect_to" value="http://ceastaffing.stpi.com/">
+                <input type="hidden" name="redirect_to" value="http://eventstaffing.stpi.com/">
 
                 
             </form>

@@ -21,13 +21,13 @@
     <div class="four columns">
       <h4>Twitter</h4>
       <div style="height: 350px; overflow: auto;" >
-      <a class="twitter-timeline" href="https://twitter.com/CEAStaffing?ref_src=twsrc%5Etfw">Tweets by CEAStaffing</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" href="https://twitter.com/eventstaffing?ref_src=twsrc%5Etfw">Tweets by eventstaffing</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
 
     <div class="four columns">
       <h4>Pinterest</h4>
-      <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/ceastaffinginc/quotes-to-inspire/"></a>
+      <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/eventstaffinginc/quotes-to-inspire/"></a>
     </div>
 
 		<?php 

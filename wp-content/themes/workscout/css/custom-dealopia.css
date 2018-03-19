@@ -126,7 +126,7 @@ display: inline-block; padding:0px; text-decoration:none;}
 #talent-filter-row .row{ margin:0px;}
 #talent-filter-row .filter-form-talent{ border-bottom:1px solid #ccc; padding:10px; display:inline-block;}
 #talent-filter-row .filter-form-talent input{font-family: 'Open Sans', sans-serif; border-radius:0px; border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; padding:2px 0px; font-size:14px;}
-#talent-filter-row .filter-form-talent select{font-family:'Open Sans', sans-serif; padding:2px 0px; font-size:14px; border-radius:0px;  border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; appearance:none; -moz-appearance:none; /* Firefox */  -webkit-appearance:none; /* Safari and Chrome */ background: url(http://ceastaffing.dealopia.com/wp-content/uploads/2017/11/arrow-down-1.png) no-repeat right 10px;
+#talent-filter-row .filter-form-talent select{font-family:'Open Sans', sans-serif; padding:2px 0px; font-size:14px; border-radius:0px;  border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; appearance:none; -moz-appearance:none; /* Firefox */  -webkit-appearance:none; /* Safari and Chrome */ background: url(http://eventstaffing.wikipia.com/wp-content/uploads/2017/11/arrow-down-1.png) no-repeat right 10px;
 
  /*position:relative;  background-image:
     linear-gradient(45deg, transparent 50%, gray 50%),
@@ -167,9 +167,9 @@ position: absolute; }
 .roundedOne { text-align:left;}
 .roundedOne label{line-height:16px; position:relative; display:inline-block; font-weight:300; margin: 0 0 0 0px; font-family:'Open Sans', sans-serif !important;}
 .roundedOne label span{ margin: 0 0 0 17px;  font-size:12px;}
-.roundedOne label:after {content:''; width:20px; height:20px; position:absolute; top:-1px; left:0px;  background:url(http://ceastaffing.dealopia.com/wp-content/uploads/2017/11/check3.png) scroll no-repeat 0 0;}
+.roundedOne label:after {content:''; width:20px; height:20px; position:absolute; top:-1px; left:0px;  background:url(http://eventstaffing.wikipia.com/wp-content/uploads/2017/11/check3.png) scroll no-repeat 0 0;}
 .roundedOne input[type=checkbox]{visibility:hidden; padding:0px !important; margin:0px !important; height:auto !important; display:inline-block; width:auto;}
-.roundedOne input[type=checkbox]:checked + label:after{ background:url(http://ceastaffing.dealopia.com/wp-content/uploads/2017/11/check4.png) scroll no-repeat 0 0;}
+.roundedOne input[type=checkbox]:checked + label:after{ background:url(http://eventstaffing.wikipia.com/wp-content/uploads/2017/11/check4.png) scroll no-repeat 0 0;}
 
 #talent-filter-row .filter-form-talent .btn{ font-family:'Open Sans', sans-serif !important; font-size:14px; border-radius:4px; padding:5px 12px !important; height:auto; border:0px; margin-bottom:10px;}
 #talent-filter-row .filter-form-talent .btn:hover{ color:#fff; }
@@ -249,7 +249,7 @@ position: absolute; }
 .create-profile .profile-details-left .form-group label{ font-size:13px; color:#333; margin-bottom:2px; display:inline-block;}
 .create-profile .profile-details-left .form-group input{width:100%; font-family: 'Open Sans', sans-serif;  border-radius:0px;  border:1px solid #ccc; padding:2px 5px; font-size:14px;  border-bottom:2px solid #AB4C47; background:none; border-left:0px; border-right:0px; border-top:0px; padding:2px 0px; font-size:14px; color:#000;}
 /*.create-profile .form-group input:focus{border:1px solid #999; box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.22);}*/
-.create-profile .form-group select{ height:32px; border:1px solid #ccc; border-radius:0px;  font-family: 'Open Sans', sans-serif; font-size:14px;  border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; padding:2px 0px; font-size:14px; color:#000;  appearance:none; -moz-appearance:none; /* Firefox */  -webkit-appearance:none; /* Safari and Chrome */ background: url(http://ceastaffing.dealopia.com/wp-content/uploads/2017/11/arrow-down-1.png) no-repeat right 10px;}
+.create-profile .form-group select{ height:32px; border:1px solid #ccc; border-radius:0px;  font-family: 'Open Sans', sans-serif; font-size:14px;  border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; padding:2px 0px; font-size:14px; color:#000;  appearance:none; -moz-appearance:none; /* Firefox */  -webkit-appearance:none; /* Safari and Chrome */ background: url(http://eventstaffing.wikipia.com/wp-content/uploads/2017/11/arrow-down-1.png) no-repeat right 10px;}
 /*.create-profile .form-group select:focus{border:1px solid #999; box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.22);}*/
 .create-profile .form-group input[type="checkbox"]{ display:inline-block; width:auto; display:none;}
 .create-profile .form-group textarea{ font-family: 'Open Sans', sans-serif; font-size:14px; padding:10px; line-height:22px; margin:10px 0 0 0; resize:none; border-radius:0px;  border:1px solid #ccc; padding:2px 5px; font-size:14px;  border-bottom:2px solid #AB4C47; border-left:0px; border-right:0px; border-top:0px; color:#333;}
@@ -312,7 +312,7 @@ height:100% !important;}
 #middle-content{ width:100%; /*background:#ccc;*/ display:inline-block;}
 #middle-content .vc_column-inner { padding:0px;}
 #middle-content .parallax-container{ width:100%;}
-#middle-content .parallax-container-one{ /*background: url(http://ceastaffing.dealopia.com/wp-content/uploads/2017/11/paralax-1-ceastaffing-8.png) fixed center;*/ height:270px; background-size:cover; /*padding:20px 0;*/ position:relative;}
+#middle-content .parallax-container-one{ /*background: url(http://eventstaffing.wikipia.com/wp-content/uploads/2017/11/paralax-1-eventstaffing-8.png) fixed center;*/ height:270px; background-size:cover; /*padding:20px 0;*/ position:relative;}
 #middle-content .bg-white{background-color: rgba(0,0,0,0.7); position:absolute; z-index:9; height:100%; width:100%; display:table; }
 #middle-content .bg-white .container{ vertical-align:middle; display:table-cell;}
 #middle-content .wpb_text_column{ margin-bottom:0px !important;} 

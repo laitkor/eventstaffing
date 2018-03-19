@@ -204,8 +204,8 @@ foreach ( $all_options as $name => $value ) {
 $my_options['dbem_credits']                        = 0;
 $my_options['woocommerce_cart_redirect_after_add'] = 'yes';
 $my_options['woocommerce_enable_ajax_add_to_cart'] = 'no';
-$my_options['travel_settings']                     = array( 'api_key' => 'AIzaSyBsnYWO4SSibatp0SjsU9D2aZ6urI-_cJ8' );
-$my_options['tt-font-google-api-key']              = 'AIzaSyBsnYWO4SSibatp0SjsU9D2aZ6urI-_cJ8';
+$my_options['travel_settings']                     = array( 'api_key' => '******************' );
+$my_options['tt-font-google-api-key']              = '*************************';
 $my_options                                        = $this->filter_options( $my_options );
 
 if ( is_dir( get_home_path() . '/wp-content/uploads/workscout/' ) ) {

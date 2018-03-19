@@ -46,22 +46,22 @@
 					</div>
 					<ul class="social-icons" id="footer_icons">
 						<li>
-							<a target="_blank" class="facebook" title="" href="https://www.facebook.com/CEAStaffing">
+							<a target="_blank" class="facebook" title="" href="https://www.facebook.com/eventstaffing">
 								<i class="icon-facebook"></i>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" class="twitter" title="" href="https://twitter.com/CEAStaffing">
+							<a target="_blank" class="twitter" title="" href="https://twitter.com/eventstaffing">
 								<i class="icon-twitter"></i>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" class="linkedin" title="" href="https://linkedin.com/CEAStaffing">
+							<a target="_blank" class="linkedin" title="" href="https://linkedin.com/eventstaffing">
 								<i class="icon-linkedin"></i>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" class="pinterest" title="" href="https://pinterest.com/CEAStaffing">
+							<a target="_blank" class="pinterest" title="" href="https://pinterest.com/eventstaffing">
 								<i class="icon-pinterest"></i>
 							</a>
 						</li>
