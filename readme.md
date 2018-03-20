@@ -10,10 +10,10 @@
 <h1 id="logo">
 	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
 </h1>
-<p style="text-align: center">Semantic Personal Publishing Platform</p>
+<p style="text-align: center">Event Staffing Web Application</p>
 
 <h2>First Things First</h2>
-<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I&#8217;m proud to be a part of. Thousands of hours have gone into WordPress, and we&#8217;re dedicated to making it better every day. Thank you for making it part of your world.</p>
+<p>Welcome. This project is best fit for staffing services for grand events and promotions which includes tours, trade shows, festivals, concerts and more. If you're looking for one stop solution for your product or service promotion then Event Staffing has the perfect solution for you.This project consumes Pop booking APIs for talent search and Admin can add Events and post blogs </p>
 <p style="text-align: right">&#8212; Matt Mullenweg</p>
 
 <h2>Installation: Famous 5-minute install</h2>
