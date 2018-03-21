@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<p style="text-align: center">Event Staffing Web Application</p>
+<h1 style="text-align: center; border-bottom: transparent; font-size: 2.1rem;">Event Staffing Web Application</h1>
 
 <h2>Overview</h2>
-<p>Event staffing is a web application best fit for staffing services for grand events and promotions which includes tours, trade shows, festivals, concerts and more. This project consumes Pop booking APIs for talent search and Admin can add Events and post blogs. If you're looking for one stop solution website for staffing services for your product or service promotion then Event Staffing is the answer. Best for staffing Trade Show Models | Street Teams | Tour Mangers | Bartenders | Baristas | Bilingual Staff | Brand Ambassadors | Promotional Models | Costumed Characters </p>
-<p style="text-align: right">&#8212; Matt Mullenweg</p>
+<p>Event staffing is a web application best fit for staffing services for grand events and promotions which includes tours, trade shows, festivals, concerts and more. This project consumes Pop booking APIs for talent search and Admin can add Events and post blogs. If you're looking for one stop solution website for staffing services for your product or service promotion then Event Staffing is the answer.</p>
+<p><strong>Best for staffing Trade Show Models | Street Teams | Tour Mangers | Bartenders | Baristas | Bilingual Staff | Brand Ambassadors | Promotional Models | Costumed Characters </strong></p>
 
 <h2>Installation: Famous 5-minute install</h2>
 <ol>
